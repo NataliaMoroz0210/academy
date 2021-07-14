@@ -17,5 +17,7 @@ public class Lesson35 { // Ввести с консоли 2 числа, найт
         } else {
             System.out.println("Число " + b + " большее, число " + a + " меньшее");
         }
+        int c = (a + b) / 2;
+        System.out.println("Среднее арифметическое: " + c);
     }
 }

@@ -13,11 +13,7 @@ public class Lesson37 {
             if (n==a){
                 System.out.println(n + " и "+  a + " равны");
             }
-            else if (n > a){
-                System.out.println(n);
-            } else {
-                System.out.println(a);
-            }
+            else System.out.println(Math.max(n, a));
         }
         scan.close();
     }
