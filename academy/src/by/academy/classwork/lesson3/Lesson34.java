@@ -1,4 +1,4 @@
-package by.academy;
+package by.academy.classwork.lesson3;
 
 public class Lesson34 {
     // 4. Перепишите программу:

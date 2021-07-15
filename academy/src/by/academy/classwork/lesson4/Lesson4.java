@@ -1,0 +1,26 @@
+package by.academy.classwork.lesson4;
+
+public class Lesson4 {
+    public static void main(String[] args) {
+        String s = "Для работы со строками в языке Java используются классы String, StringBuilder, StringBuffer.";
+        System.out.println(s);
+        System.out.println("indexOf(S) = " + s.indexOf('S'));
+        System.out.println("lastIndexOf(r) = " + s.lastIndexOf('r'));
+        System.out.println("indexOf(String) = " + s.indexOf("String"));
+        System.out.println("lastIndexOf(String) = " + s.lastIndexOf("String"));
+        System.out.println("indexOf(S, 60) = " + s.indexOf('S', 60));
+        System.out.println("lastIndexOf(S, 70) = " + s.lastIndexOf('S', 70));
+
+        String findS = "S";
+        int index = -1;
+        int i[] = new int[10];
+        int counter = 0;
+
+        do {
+            index = s.indexOf(findS, index == -1 ? 0 : index + 1);
+            if (index != -1) {
+                i[counter++] = index;
+            }
+        } while (index != -1);
+    }
+}
