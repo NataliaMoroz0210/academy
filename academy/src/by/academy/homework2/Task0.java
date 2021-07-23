@@ -15,7 +15,6 @@ public class Task0 {
                 }
             }
         }
-        // write code here
         return pairsCount;
     }
 
