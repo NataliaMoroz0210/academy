@@ -1,6 +1,10 @@
 package by.academy.homework1.task5;
 
-public class Cat {
+import by.academy.Animal;
+
+import java.io.Serializable;
+
+public class Cat extends Animal implements Serializable {
     String nickname;
     int age;
 

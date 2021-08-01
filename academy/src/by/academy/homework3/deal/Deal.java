@@ -1,20 +1,22 @@
-package by.academy.classwork.lesson7;
+package by.academy.homework3.deal;
 
+import java.time.LocalDate;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.Objects;
 
 public class Deal {
     private Product[] products;
     private User seller;
     private User buyer;
-    private Date dedData;
+    private LocalDate dedData;
 
     public double caleFullPrice() {
         double caleFullPrice = 0;
         if (products != null) {
             for (Product p : products) {
-                caleFullPrice += p.calePrice();
+                if (p != null) {
+                    caleFullPrice += p.calePrice();
+                }
             }
         }
         return caleFullPrice;
@@ -45,11 +47,11 @@ public class Deal {
         this.buyer = buyer;
     }
 
-    public Date getDedData() {
+    public LocalDate getDedData() {
         return dedData;
     }
 
-    public void setDedData(Date dedData) {
+    public void setDedData(LocalDate dedData) {
         this.dedData = dedData;
     }
 
